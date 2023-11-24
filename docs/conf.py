@@ -27,6 +27,8 @@ copyright = '2023, Pierre-Emmanuel Novac'
 author = 'Pierre-Emmanuel Novac'
 python_module_name = 'qualia_plugin_template'
 
+qualia_doc_base_url = 'https://leat-edge.github.io' if os.getenv('GITHUB_ACTIONS') else 'http://naixtech.unice.fr/~gitlab/docs'
+
 # The full version, including alpha/beta/rc tags
 
 def pdm_get_version(root_path: Path) -> str:
@@ -89,7 +91,7 @@ intersphinx_mapping = {
     'numpy': ('https://numpy.org/doc/stable/', None),
     'PyTorch': ('https://pytorch.org/docs/stable/', None),
     'spikingjelly': ('https://spikingjelly.readthedocs.io/zh_CN/latest/', None),
-    'qualia_core': ('http://naixtech.unice.fr/~gitlab/docs/qualia-core', None),
+    'qualia_core': (f'{qualia_doc_base_url}/qualia-core', None),
 }
 
 show_authors = True
