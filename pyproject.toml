@@ -24,7 +24,8 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-homepage = "https://naixtech.unice.fr/gitlab/qualia/qualia-plugin-template"
+homepage = "https://github.com/LEAT-EDGE/qualia-plugin-template"
+documentation = "https://leat-edge.github.io/qualia-plugin-template"
 
 [project.optional-dependencies]
 lint = ['ruff']
